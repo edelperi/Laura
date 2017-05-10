@@ -50,7 +50,7 @@
 %% On the other hand, \alsoaffiliation is used on a per author basis
 %% when authors are associated with multiple institutions.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\author{Maria Laura V\'azquez Ju\'iz}
+\author{Mar\'ia Laura V\'azquez Juiz}
 \affiliation[UVIGO Campus Auga]{Facultad de Ciencias, Campus da Auga, University of Vigo}
 
 \author{Diego Soto G\'omez}
@@ -68,20 +68,17 @@ Carretera de La Coru\~na km 7,5 Madrid}
 \alsoaffiliation{Facultad de Ciencias, Campus da Auga, University of Vigo}
 
 \author{Jos\'e Eugenio L\'opez Periago}
-\affiliation[UVIGO Campus Auga]{Facultad de Ciencias, Campus da Auga, University of Vigo}
+\affiliation[UVIGO Campus Auga]{Hydraulics Lab,Faculty of Sciences, Campus da Auga, University of Vigo}
 \altaffiliation{Current address:  Edificio polit\'ecnico s/n As Lagoas 32004 Ourense, Spain}
 %\email{edelperi@uvigo.es}
 \phone{+34 (9)88 387070}
 \fax{+34 (9)88 387001}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% The document title should be given as usual. Some journals require
-%% a running title from the author: this should be supplied as an
-%% optional argument to \title.
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
 \title[Resolving particle size in polydisperse mixtures by TRPS]
   {Resolving the particle size distribution in polydisperse polystyrene latex
   microspheres-humic acid mixtures using Tunable Resistive Pulse
-  Scanning\footnote{Resolving particle distribution in polidisperse
+  Sensing\footnote{Resolving particle distribution in polidisperse
   suspensions using TRPS}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -98,6 +95,7 @@ Carretera de La Coru\~na km 7,5 Madrid}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
 
+\tableofcontents
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The "tocentry" environment can be used to create an entry for the
 %% graphical table of contents. It is given here as some journals
@@ -219,8 +217,10 @@ limited by technique of coating flat surfaces with a desired compound so, to dat
 
 \subsection{Particle size}
 % En que consiste el TRPS
-Particle size was measured by 
-TRPS, this method determines the size of individual particles using the same principle of the Coulter method. The apparatus is qNano (iZon, Oxford) using the software
+TRPS method uses the same
+principle of the Coulter method. It
+calculates the size of individual particles 
+and determines the  concentration of particles in the sample.
 %Ventajas del TRPS 
 
 TRPS has enough resolution to discriminate populations mixed in multimodal
@@ -229,12 +229,24 @@ In adition, TRPS does not disturb the geometry of the particle, such as  the
 TEM or SEM, which need to dry the suspension before measurement.
 %inconvenientes
 One drawback of this technique is that electric conductivity of the buffer
-used in the TRPS cell must met the requirements of current intensity and
-voltage for accurate measurements of the blockades. This constitutes an
-important limitation in the span of  experimental conditions  required in
-extreme environments, i.e. seawater and extreme \ce{pH}s.
+used in TRPS.
+Electrolyte must met the requirements of current intensity and
+voltage for accurate measurements of the blockades.
+Since the most of the applications have been developed to 
+biological fluids, and buffers typically used in cellular biology  such as PBS or Tris.
+This constitutes an
+important limitation in the span of  experimental conditions  required in the  earth surface environment, i.e. surface and subsurface waters, with a larger  span of \ce{pH} and electrolyte composition.
+Therefore, a setup of electrolyte 
+
+
 %
 Another limitation is the representativity of the sample. Size is determined in a very small sample of particles, about  $500$ counts in samples with $10^9$ particles per liter.
+
+
+
+%Por hacer:
+%Eugenio .- Efectos de ángulo de trayectoria de las MS sonbre los blockades.
+% Produce distribuciones con dos picos, el segundo está asociado a trayectorias con ángulos cerrados.\cite{Weatherall2016}
 
 %========================================================================
 %Objectives
@@ -244,8 +256,15 @@ particle size mixtures in  polydisperse colloid suspensions.
 
 In a primary approach the TRPS was used to examine the HA coating of
 polystyrene latex beads by measuring the changes of the particle size
-distribution. 
+distribution.
 
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Theory
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\section{Theory}
+%teoría de la formación de recubriemientos poliméricos sobre partículas coloidales
+% Gregory, Elimelech
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -253,64 +272,145 @@ distribution.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Experimental} % Langmuir
 %\section{Materials and methods} %ES&T
-
-
-\subsection{Reagents}
-
-% Explicar:
-%reactives MS y HA, calidad del agua, sonicacion, vortex y filtración  buffers and preparation
-% pH y conductividad electrica de los buffers
-
-
-
+%Laura:
 \subsection{Particle size measurement}
-Particle size was measured by 
-TRPS, this method determines the size of individual particles using the same principle of the Coulter method.
-%descripción del aparato y membranas.
-The apparatus is qNano (iZon, Oxford) using the software
+%Laura:
+We used a NP1000 nanopore that measures sizes between 500 and
+$2000~\mathrm{nm}$.
+This interval is optimal for measuring the
+$1000~\mathrm{nm}$ 
+microspheres used in this study.
+
+
+All buffer and electrolytes used in the particle size measurements were
+prepared withultrapure water
+Milli-Q (Millipore-Merk)  filtered through a membrane
+$< 220~\mathrm{nm}$).
+
+%buffers
+Concentrations of  \ce{NaCl} and \ce{CaCl2} were optimized to reach the 
+same operational conditions of measurement used in the
+calibration with the microspheres used as standards in
+phosphate saline buffer (PBS,
+\ce{Cl2H3K2Na3O8P2}).
+The optimal concentrations, pH and the ionic strength of the buffers are shown in Table~\ref{tbl:electrolytes}. 
+
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%  LAURA:     FALTAN LOS PH!!!!
+\begin{table}
+\caption{Characteristics of the electrolytes used in the TRPS measurements}
+\label{tbl:electrolytes}
+  \begin{tabular}{lrrr}
+Electrolyte & Conc. & \ce{pH}  & $I$ \\
+\hline
+PBS &	152 & ????	&	172 \\
+\ce{NaCl} &	14	& 	???? &	14\\
+\ce{CaCl2} &	7	& ???? &	21\\
+\hline
+\multicolumn{4}{p{0.4\linewidth}}{
+Conc., concentration $\mathrm{mmol\,L^{-1}}$; 
+$I$, ionic strength  $\mathrm{mmol\,L^{-1}}$; 
+}
+\end{tabular}
+\end{table}
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+%Colloids
+The colloid suspensions used in the experiments were latex microspheres (MS), humic acids (HA) and mixtures of microspheres and humic acids (MS-HA).
+
+%polystyrene
+Polystyrene latex MS,
+Estapor Merck-Millipore, Darmstadt Germany, Ref. F-Y 100, Lot number 953 B1,
+had a mean diameter of $930 \, \pm 10~\mathrm{nm}$ 
+without surface functional groups.
+The stock suspension had a polystyrene concentration of $10~\mathrm{g\,L^{-1}}$.
+
+Humic acids were purchased from from Merck-Sigma-Aldrich,
+humic acid sodium salt technical grade CAS Number 68131-04-4,
+with a molecular weight range of 2,000--500,000.
+ A stock suspension was prepared by dissolving 
+$\mathrm{0.1\,g}$ HA in $100~\mathrm{mL}$ ultrapure water.
+
+The mixture was prepared with different concentrations of humic acids to know if covering was produced. The MS suspension was a dilution 1:1000 from the stock. 
+
+
+%Laura:Measurements in the TRPS: buffer (less than a minute), buffer + HA (3 minutes approximately) and buffer + MS + HA (lasted a minimum of 30 seconds). 
+
+%Measurement protocol in the TRPS
+
+
+All the suspensions were prepared in three buffers: \ce{CaCl2},
+PBS and \ce{NaCl}. 
+All the suspensions were vortexed 
+and filtered just before injecting in the TRPS apparatus.
+
+%!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+%Eugenio: cuanto volumen de buffer pusiste en cada parte de la célula del TRPS? 40 uL?
+$\mathrm{40 \,\mu L}$ buffer
+was put in the lower
+fluid cell and in the upper fluid cell. The parameters were
+adjusted to a current with values between 70 and 150 nA. Once
+the current was stable, the samples were injected in the upper cell.
+The experimental conditions chosen for the three buffers  were identical, with a pore stretch of $47~\mathrm{mm}$.
+The total pressure different between the two halves of the fluid cell was 
+$66~\mathrm{Pa}$, 
+the sames used by other authors~\cite{Weatherall2016}.
+The voltages were 
+$0.08~\mathrm{V}$ for PBS, and 
+$0.7~\mathrm{V}$ for both
+\ce{NaCl} and
+\ce{CaCl2}. 
+
+
+		
+
+% Pressure & Inherent p./ Pa & Inherent p./ cm H2O  & Actual pressure/ Pa & Actual pressure/ cm H2O \\
+%\hline
+% 20 & 46 & 0.47 & 66 & 0.674347826\\
+
+
+The device measurement thresholds are 30 seconds minimum
+and 10 minutes the maximum time for the measurement to be
+optimal, provided that a minimum of 500 blockades is reached
+for the 30 seconds case.
+
+
+
+%Experimental plan
+
+Influence of concentration of HA and contact time on the size  distribution of MS were evaluated.
+Five concentrations of HA, namely 
+2, 4, 6, 8 and  10 $\mathrm{mg\,L^{-1}}$
+and a control of MS without HA
+were incubated for 
+0.25, 16 y 41 h in 
+%14 mM \ce{NaCl} and
+7 mM\ce{CaCl2}
+%, pH  ???????
+.
+All experiments were made in triplicate.
 
 
 
 
-%Laura: redactar control de cuentas HA
-% Condiciones de medida de HA
 
-%Resultado (revisar)
-
-Electrolyte without HA gave zero counts after $\mathrm{30\,s}$.
-HA in \ce{CaCl2} $\mathrm{7\, mmol\,L^{-1}}$ gave $0.062\,\pm0.085~\mathrm{nA\,s^{-1}}$.
-Blockade rate of HA in \ce{CaCl2} $\mathrm{7\, mmol\,L^{-1}}$
-$\mathrm{pH}\,6$ were 
-%XXXX 
-times lower than the blockade rate in presence of MS. Therefore the contribution of free HA to the blockades in  HA-MS mixtures is %negligible?.
-
-%Conclusión
-
-
-
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%% Theory
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Theory}
-
-
-
-%teoría de la formación de recubriemientos poliméricos sobre partículas coloidales
-% Gregory, Elimelech
-
-
-
+%=================== End of the experimental section ==========
 
 
 
 \subsection{Particle size clustering}
 
+
+
+
 Analysis of particle size populations was done by    
 a model-based clustering, classification, and density estimation based on
 finite Gaussian mixture modeling.  The clustering model used is the 
-expectation-maximization (EM) algorithm. 
+expectation-maximization (EM) algorithm, a general description can be read in 
+\citeauthor{Do2008}  
+\citeyear{Do2008}
+\cite{Do2008}.  
+
 Briefly, each population of a finite  mixture density is usually associated with a group or cluster. In this work we assume that all component densities arise from the same parametric distribution family. The model assumes a univariate Gaussian distribution for each component or cluster. In one dimension, there are just two models, all component have equal variance or varying variance among components.
 The model selection was based on the Bayesian Information Criteria (BIC).
 Details about the clustering procedure and information of the mclust library used for calculations can be read in 
@@ -329,9 +429,133 @@ Details about the clustering procedure and information of the mclust library use
 
 
 
-\subsection{Electrochemical flocculation}
+%===========================================================
+% En esta sección se describen los resultados de probar los
+% buffers NaCl y CaCl2
+\subsection{Buffers}
+%-------------------------------------------------------------
+  
+  %Masa molecular NaCl 58.44 g/mol
+  %Masa molecular CaCl_2  110,98 g/mol
+  
+  
+%quedei
+%PBS
+%Molecular Formula: 	Cl2H3K2Na3O8P2
+%Molecular Weight: 	411.029 g/mol
+  
+ %PBS 8,2 mol/l  3379,5 ppm
+ 
+ 
+ 
+%LAURA que oncentraciones de MS utilizaste para las pruebas de HA y ? 
+ %Resultado (revisar)
 
-%%==========================================================================
+
+Optimal conditions of baseline current magnitude and  stability, and blockade readings  were obtained with 
+ \ce{NaCl\; 5.5\,mmol\,L^{-1}}
+ \ce{CaCl2\; 2.5\,mmol\,L^{-1}}.
+ 
+ 
+ 
+
+ 
+
+%\begin{table}
+%\label{tbl:control_baseline_blockades}
+%\caption{Average blockade rate ,$\mathrm{nC\,s^{-2}}$, of MS
+%and HA ($10~\mathrm{mg\,L^{-1}}$)
+%in electrolyte (\ce{CaCl2} $\mathrm{7\, mmol\,L^{-1}}$). Control %is electrolyte only.
+%}
+%\begin{tabular}{
+%l r@{$\pm$}l 
+%r@{$\pm$}l
+%}
+%Test & \multicolumn{2}{c}{blockade rate} &nA 10 min\\
+%\hline
+%MS & 10.1 & 2.66 & 6057 \\
+%HA  & 0.042  & 0.059 & 25\\
+%Control & 0.008 & 0.007 & 5\\
+%\hline
+%\multicolumn{3}{p{0.3\linewidth}}{Control }
+%\end{tabular}
+%\end{table}
+
+
+Comparison of 
+blockade magnitude and duration 
+for these electrolytes and the PBS buffer, used as standard, is shown in Figure~\ref{fgr:pairs_buffers}.
+%%=============================================================
+ \begin{figure}
+  \includegraphics[width=\linewidth]{Figures/Pairs_buffers_MS.pdf}
+  \caption{Scatter-plot comparing  blockade magnitude and blockade duration of  polystyrene microspheres for three electrolytes. The core of the point cloud is similar in the three elecrolytes. PBS  present the largest  disp/ersion in the blockade magnitude.} 
+  \label{fgr:pairs_buffers}
+\end{figure}
+%% ===========================================================
+Note that  the scattering patterns \ce{NaCl}  and \ce{CaCl2} are almost identical  similar, while PBS showed the largest  variation in the blockade magnitude.
+Table~\ref{tbl:clustering_buffers} shows that the number of blockades was similar for the electrolytes and PBS.
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+\begin{table}
+\label{tbl:clustering_buffers}
+\caption{2D  clustering results of
+ blockade magnitude and  duration 
+ for three buffers
+using the gaussian finite mixture model fitted by EM algorithm
+}
+\begin{tabular}{rrrrrrr}
+& \multicolumn{2}{c}{\ce{CaCl2}} &
+  \multicolumn{2}{c}{\ce{NaCl}} &
+  \multicolumn{2}{c}{PBS} \\
+\hline
+\# & nblk & MP &
+    nblk & MP &
+    nblk & MP \\ 
+\hline
+1 & 13 &  0.004  & 1068 &   0.328 &  447 &    0.119 \\
+2 & 587 & 0.137  & 988 &    0.283&   342 &    0.107 \\
+3 & 1340 & 0.357 & 739 &    0.237&   787 &    0.206 \\
+4 & 1332 & 0.343 & 231 &    0.077&   713 &    0.215 \\
+5 & 331 & 0.106  & 174 &    0.062 &  80 &     0.019 \\
+6 & 76 &  0.022  & 8 &      0.003 &  1059 &   0.291\\
+7 & 72 &  0.032  & 18 &     0.009 &  54 &     0.017 \\
+8 &    &         & 2 &      0.001 &  104 &    0.024 \\
+\hline
+Sum &3751 &&  3288  && 3586 &  \\   
+\hline
+\multicolumn{7}{p{0.5\linewidth}}{nblk number  of blockades in the cluster ;MP, mixing probabilities.}\\
+\end{tabular}
+\end{table}
+
+
+% Testing the background blockades using buffers and HA
+Electrolyte,
+\ce{CaCl2} $\mathrm{2.5\, mmol\,L^{-1}}$
+$\mathrm{pH}\,6$ 
+gave about six blockades after $\mathrm{600\,s}$.
+Blockade rate using the highest concentration of 
+HA ($10~\mathrm{mg\,L^{-1}}$) in \ce{CaCl2}
+ was $0.042\,\pm0.059~\mathrm{nA\,s^{-1}}$.
+Blockade rate using the MS in \ce{CaCl2} 
+was 240 times higher than HA. Therefore the contribution of  unbound HA to blockades in  HA-MS mixtures can be neglected, and
+blockades can be assigned mostly to MS.
+
+
+\subsection{HA-MS interaction}
+
+%%==============================================================
 \begin{table}
 \caption{Double layer sphere-sphere interaction  of HA and MS using the standard DLVO calculations assuming constant potential.}
 \label{tbl:dvlo_interaction}
@@ -349,11 +573,13 @@ Repulsion barrier & $0.15$ & $\mathrm{K_B\,T}$\\
 \hline
 \end{tabular}
 \end{table}
-%===========================================================================
+%===============================================================
 
 
 
-%Resultado: floculacion excesiva por elevada fuerza iónica
+
+
+%Resultado: Flicculation excesiva por elevada fuerza iónica
 High ionic strength in presence of HA causes an excessive flocculation in
 few minutes. 
 High flocculation rate imply that the aggregate size distributions shift towards sizes much larger than the measuring pore in the TRPS.
@@ -363,22 +589,17 @@ small particles enter into the pore membrane. That results in low particle count
 Optimal 
 \ce{[CaCl2] \; 7\, mmol\, L^{-1}}
 and \ce{pH \; 6.4 \pm0.2} % revisar este dato de pH porque el pH-metro no calibraba muy bien
-were adequate to a flocculation conditions for the particle size measurements.
+were adequate conditions for the particle size measurements.
 %poner  fotografías de los flocs 
 
 
 
 
-
-
-
-
-
+\subsection{Influence of HA on particle size}
 
 %Evolución global de los tamaños
-The moments relation or the particle sizes, moment 4 / moment 3,  is often used to
-parametrize the particle population dynamics. This relation (Figure~\ref{fgr:moments43})
-shows that HA increased the size of the microspheres. The contact time had a notable influence on the effect of HA. At short times,
+The average particle diamater (Figure~\ref{fgr:meansize})
+shows that HA increased the size of the microspheres. The contact time also had a notable influence on the effect of HA. At short times,
 $< 1~\mathrm{h}$, 
 presence of HA was negligible but large times, 
 $18 - 42~\mathrm{h}$,
@@ -388,20 +609,16 @@ produced a large increase in size.
 
 %%========================================================================= 
  \begin{figure}
-  \includegraphics[width=\linewidth]{Figures/Moments_34.pdf}
+  \includegraphics[width=\linewidth]{Figures/mean_particle_size.pdf}
   \caption{Time course of the evolution of the particle size, calculated by the  ratio moment 4 divided by the moment 3, for different concentrations of humic acids.} 
-  \label{fgr:moments43}
+  \label{fgr:meansize}
 \end{figure}
 %% =========================================================================
 
 
 
-\subsection{Clustering particle sizes}
 % En esta parte solamente describimos los resultados, no aventuramos ninguna 
-% hipótesis porque no sabemos que es lo que ocure realmente.
-% puede ocurrir que e  el cluster 1 solamente existan MS, y en los demás
-% clusters solamente existan HA floculados.
-% Así que estamos a la espera de los resultados de Laura.
+%  ya sabemos que los HA en CaCl2 NO producen Blockades (apenas) :-)!!!!
 
 
 %Gaussian finite mixture model fitted by EM algorithm   
@@ -620,14 +837,18 @@ discussed above.
 \section{Discussion}
 
 
+%
+The suitabiliy of TRPS to study colloid particle sizes
+can be limited by the \ce{pH} and ionic strength  values that  control the flocculation rate.
+Fortunately, the optimal pH and \ce{[Ca^{2+}]} for the TRPS measurements fall into the
+typical values of the
+soil solution\cite{wolt1994soil}
+and  fresh water environments\cite{Stumm1993}.
+Therefore, TRPS can be used to characterize the colloidal suspensions in a wide span of these of  aquatic samples and soils.
 
 %Discusión: floculacion excesiva por elevada fuerza iónica
-The suitabiliy of TRPS to study colloid particle sizes
-and is limited by the \ce{pH} and ionic strength  values that  control
-the flocculation rate. Large aggregates exceeding  the size of the measurement pore in the TRPS cannot be measured.
-Fortunately, the optimal conditions fall into the typical values of 
-terrestrial aquatic environments.
-
+Large aggregates exceeding  the size of 
+the measurement pore in the TRPS cannot be measured.
 
 % Aqui discutimos la parte de la \subsection{Clustering particle sizes}
 
@@ -737,8 +958,9 @@ water quality, environment and public health.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{acknowledgement}
 
-The authors thanks 
-Camille Roesch, Izon Europe Ltd. for technical supporting the TRPS.This
+%The authors thanks 
+%Camille Roesch, Izon Europe Ltd. for technical supporting the TRPS.
+This
 work is partially funded by an AA1-GRC research contract (UE-FEDER,
 Xunta de Galicia GRC2014/017), Diego-Soto by Spanish Government MEC’s FPU.
 
