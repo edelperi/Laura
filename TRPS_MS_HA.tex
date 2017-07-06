@@ -84,8 +84,8 @@ HA-MS mixture suspensions using TRPS}}
 %% supplied. These should be set up here, and will be printed after
 %% the title and author information, if needed.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\abbreviations{BIC,DLVO,HA,MS,PBE,PSD,TRPS}
-\keywords{Bayesian Information Criteria, Clustering, Humic Acid, Dejarguin-Landau-Vervey-Oberbeek,Polystyrene-latex Microspheres,Particle Balance Equation,Particle Size Distribution,Tunable Resistive Pulse Scanning}
+\abbreviations{BIC,DLVO,HA,MS,PSD,TRPS}
+\keywords{Bayesian Information Criteria, Clustering, Humic Acid, Dejarguin-Landau-Vervey-Oberbeek,Polystyrene-latex Microspheres,Particle Size Distribution,Tunable Resistive Pulse Scanning}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% The manuscript does not need to include \maketitle, which is
@@ -118,18 +118,23 @@ text is correct.
 \begin{abstract}
 
 
-Dissolved  organic matter (DOM) is ubiquitous the environment and has a great influence on the behavior of microorganisms and micro and nanoparticles. Usually, DOM stabilizes particle suspensions enhancing their transport. New developments on environmental technical applications using this kind of particles require methods of identification and quantification. 
+Dissolved  organic matter (DOM) is ubiquitous the environment and has a great influence on the 
+behavior of microorganisms and micro and nanoparticles. Usually, DOM stabilizes particle 
+suspensions enhancing their transport. New developments on environmental technical 
+applications using this kind of particles require methods of identification and 
+quantification. 
 
 %NOM can block the colloid adsorption sites in soil,  aquifers, river beds and packed filters. Can be adsorbed by colloids,  leading the polymer bridging and polymer stabilization. Furthermore,   high concentration of polymer can lead to depletion stabilization of  particles. 
 
 %Coating of colloidal particles by natural polymers  adds complexity on the colloid transport in  porous media.
 
 %Several techniques Light scattering has an intrinsic difficulty to resolve the particle size in polydisperse colloidal suspensions.
-Tunable Resistive Pulse Sensing (TRPS) measures the particle size individually. This feature can be used to resolve the components of mixed sizes distributions in the polydisperse aqueous suspensions typically found in natural waters.
+Tunable Resistive Pulse Sensing (TRPS) measures the particle size individually. This feature can be used to resolve the components of mixed sizes distributions in the polydisperse aqueous suspensions typically found in natural waters. But little is known about the influence of dissolved polymers on the particle characterization by TRPS.
 
 %TRPS determinations depend on the electrochemical properties of the electrolyte. Presence of natural polymers can affect 
 
-In this work we used TRPS and statistical clustering to distinguish the components of a mixture of particles ($1000~\mathrm{nm}$) and humic acids in the range from $500$ to $2000~\mathrm{nm}$. We differentiated several clusters and studied their behavior with time and different humic acid concentrations. We found that the presence of humic acids in the particle suspension increased the size measured by the TRPS, causing an overestimation of the diameter.
+In this work we used TRPS and statistical clustering to distinguish the components of a mixture of particles ($1000~\mathrm{nm}$) and humic acids, HA,  in the range from
+$500$ to $2000~\mathrm{nm}$. We differentiated several clusters and studied their behavior with time and different HA concentrations. We found that the presence of HA in the particle suspension increased the size measured by the TRPS, causing an overestimation of the diameter.
 \end{abstract}
 
 
@@ -162,7 +167,7 @@ Micro and nanoparticles end up in soils, waters, and  terrestrial environments, 
 
 %% El problema de determinación de tamaños en suspensiones de tamaños coloidales polidispersos
 
-Dynamic light scattering (DLS)  cannot resolve variation in size as the scattering angle is increased through minima in the intensity form factor. Some efforts have been made to characterize the particle size distributions of colloidal particles with small polydispersities, using a combination of DLS and static light scattering and two-color laser sources to avoid contributions from multiple scattering. However, the results cannot discriminate different particle populations~\cite{Bryant2003AccurateSuspensions} . These authors reported heavy tailed distributions, but they did not report population mixtures.
+Dynamic light scattering (DLS)  cannot resolve variation in size as the scattering angle is increased through minima in the intensity form factor. Some efforts have been made to characterize the particle size distributions of colloidal particles with small polydispersities, using a combination of DLS and static light scattering and two-color laser sources to avoid contributions from multiple scattering~\cite{Bryant2003AccurateSuspensions}. However, they report heavy tailed particle size distributions and cannot discriminate different particle size populations.
 
 
 
@@ -170,7 +175,7 @@ Dynamic light scattering (DLS)  cannot resolve variation in size as the scatteri
 \subsection{Polymer coating and colloid behavior}
 
 %importancia de la cubierta polimérica y que efectos  tiene sobre el comportamiento de l.os coloides
-Polymer coating by dissolved humic acids affects dramatically the mobility of colloid-size particles in aqueous environments. The ubiquity of dissolved organic matter in these environments makes that polymer-particle interactions have to be considered in all processes in which colloid transport is involved.
+Polymer coating by DOM affects dramatically the mobility of colloid-size particles in aqueous environments. The ubiquity of dissolved organic matter in these environments makes that polymer-particle interactions have to be considered in all processes in which colloid transport is involved.
 
 For example, the retention of pathogenic microorganisms depends largely on characteristics of the polymer coating~\cite{Morales2011a} . Cross linking can favor the coagulation, bridging and flocculation, enhancing the colloid retention by several orders of magnitude. Conversely,  stabilization by adsorbed polymers can enhance the transport~\cite{Keller2010}.
 
@@ -180,7 +185,7 @@ The conformation of the polymers attached to the particle surfaces is controlled
 Study of polymeric coating   on surfaces can be cumbersome.~\citeauthor{doi:10.1021/es981236u}\cite{doi:10.1021/es981236u}
 used  \ce{Si/SiO2} wafer strips coated with  polystyrene as support for
 adsorption studies of HA laser-beam reflectometry. This procedure is
-limited by the technique of coating flat surfaces with a desired compound. Therefore, until now, this method cannot be used with  natural colloids or microorganisms.
+limited by the technique of coating flat surfaces with a desired compound. Therefore, until now, this method cannot be used to measure the coating in natural colloids or microorganisms.
 
 %Tamaño de los HA (esto puede ir a métodos) de momento no lo  ponemos
 
@@ -193,23 +198,21 @@ limited by the technique of coating flat surfaces with a desired compound. There
 %$5.8$ to $7.5~\mathrm{nm}$.
 
 
-
-
-
 % Métodos disponibles para deteminar el tamaño de los coloides.
 %\subsection{State of art on methods to determine  the particle size}
 
+%------------------------------------------------------------------------------------------------------
+%esto mejor lo quitamos, complica un poco todo aunque es interesanrte para otros trabajos y para la tesis
+%A large amount of work has been done over the double layer interaction of colloids with the same magnitude in their surface charge (same charge or opposite charge). Furthermore, new environmental  applications using micro or nano-scale particles can differ in their surface charge due to the natural DOM. Asymmetric systems show a more complex behavior than the symmetrical ones, and the respective forces have richer features than the symmetrical ones\cite{Ruiz-Cabello2013} .
+%------------------------------------------------------------------------------------------------------
 
-A large amount of work has been done over the double layer interaction of colloids with the same magnitude in their surface charge (same charge or opposite charge). Furthermore, new environmental  applications using micro or nano-scale particles can differ in their surface charge due to the natural DOM. Asymmetric systems show a more complex behavior than the symmetrical ones, and the respective forces have richer features than the symmetrical ones\cite{Ruiz-Cabello2013} .
-
-
-\subsection{Particle size}
+\subsection{Tunable resistive pulse sensing}
 % En que consiste el TRPS
 TRPS method uses the same principle of the Coulter method. It calculates the size of individual particles and determines their  concentration in the sample by counting particle-by-particle within 20 to 3000 nm scale.
 
 %Laura: A qNano (IZON Science) was used in this study, a device that allows measure particle distributions within the nanometer scale. The technique is called TRPS, tunable resistance pulse sensing and when we modify the stretch of the pore at macroscopic level, we modify the size of the nanoscopic pore. 
 
-The measurement procedure consists in applying a voltage across a single pore connecting two cavities. In this way, when a particle passes through the nanopore, there will be a decrease in the applied current. There is a relationship between the voltage and the volume of the particle that crosses so that we can determine the size of the particles by calibration with microspheres of known size. Moreover, the pores are made in a  thermoplastic polyurethane membrane which can be stretched (tunning) to fit the size of nanopore to the best detection of particles being measured~\cite{Weatherall2016}.
+The measurement procedure consists in applying a voltage across a single pore connecting two cavities. In this way, when a particle passes through the nanopore, there will be a decrease in the applied current. There is a relationship between the voltage and the volume of the particle that crosses so that we can determine the size of the particles by calibration with microspheres of known size. Moreover, the pores are made in a  thermoplastic polyurethane membrane which can be stretched (tunning) to fit the size of nanopore to the best detection of  resistive pulses (blockades) on the passage of the particles~\cite{Weatherall2016}.
 
 %Laura: The set up for the measurements consists of placing the pore membrane in the teeth of the device. The upper and the lower fluid cell have an Ag/AgCl electrode. The pore geometry consists of a conical shape whose smallest aperture lies on the side of the upper fluid cell. The parameters can be adjusted in the device are three: applied voltage, stretch and pressure. The pressure is controlled by a variable pressure manometer (VPM). When the upper fluid cell is full, there is an inherent pressure whose value is 46 Pa which corresponds to the pressure exerted on its container. (Ref.: http://pubs.acs.org/doi/abs/10.1021/acs.analchem.6b01818)
 
@@ -232,17 +235,19 @@ Another limitation is the representativity of the sample. Size is determined in 
 %Eugenio .- Efectos de ángulo de trayectoria de las MS sonbre los blockades.
 % Produce distribuciones con dos picos, el segundo está asociado a trayectorias con ángulos cerrados.
 Under certain experimental conditions, distribution broadening and double peaks can generate significant size measurement uncertainties. Broadening (and hence the uncertainty) can be reduced by working with relatively small pores\cite{Weatherall2016}. This is a potential drawback of the TRPS in aggregation studies: the same pore and stretching  should be used for a large span of aggregate sizes in the same sample.
- 
+
+\subsubsection{Influence of DOM on particle size measurements}
+
+Little in known about the presence of dissolved polymers on the TRPS determinations.  \citeauthor{Pevarnik2013}\cite{Pevarnik2013} reported that hydrogels pass through the pores by electroosmosis and cause a characteristic shape of blockades. Therefore the presence of DOM in natural water samples can alter the  measurements of the particle size. DOM can pass through the macropore in several ways depending on the electrochemical properties of the  suspension and the properties of Dom and the MS surface: DOM can flocculate as a low density  hydro-colloids, can attach to the surface of particles or pass as dissolved together with the  particle thorough the pore. 
  %so we use only the the  full width half-maximum (fwhm), blockade magnitude.
 
 %========================================================================
 %Objectives
 %========================================================================
 
-In view of above, the TRPS is a promising technique to characterize (nano)-micro particles in water samples from terrestial environments.
+In view of above, the TRPS is a promising technique to characterize (nano)-micro particles in water samples from terrestial environments, but the presence of DOM can alter the mesurements. Therefore, the objective is to test the capabilities of TRPS to measure  particle sizes in presence of polymers, in particular   we examine the influence of dissolved natural organic polymers, in particular humic acids, on  particle size determinacion of microspheres using TRPS.
 
-The objectve is to test the capabilities of TRPS to measure  particle sizes in presence of polymers, in particular   to examine the influence of disolved natural organic polymers humic acids  on TRPS mesurements.
-To this aim we examine the influence of several concentrations of HA and contact time between the HA and the microsferes on the TRPS results.
+To this aim we examine the influence of several concentrations of HA and contact time between the HA and polystyrene latex MS on the TRPS measurements.
 
 
 
@@ -272,7 +277,7 @@ A) & B) \\
 \includegraphics[width=0.5\linewidth]{Figures/NP1000-021.jpg}  \\
 \hline
 \end{tabular}
-\caption{SEM images showing a detail of the pore in the NP1000 membrane. A) x5000: the upper side is a narrow irregular hole (particle input) , B) x1900: the bottom side is wider (particle output). Note that in the image the membrane is not stretched. but it is stretched when installed in the TRPS apparatus, so the shape and size is different during particle measurement.}
+\caption{SEM images showing a detail of the pore in the NP1000 membrane. A) x5000: the upper side with  a narrow irregular hole in the center of the image about 1 $\mu m$ in the largest dimension (particle input) , B) x1900: the bottom side is wider hole (particle output). Note that in the image the membrane is not stretched. but it is stretched when installed in the TRPS apparatus, so the shape and size is different during particle measurement.}
 \label{fgr:NPmil}
 \end{figure}
 
@@ -283,20 +288,21 @@ A) & B) \\
 
 
 %buffers
-All buffers and electrolytes used in the particle size measurements were prepared with ultrapure Milli-Q water (Millipore-Merk)  filtered through a 220 nm filter. Concentrations of \ce{NaCl} and \ce{CaCl2} were optimized to reach the same operational measurement conditions used with phosphate saline buffer (PBS, \ce{Cl2H3K2Na3O8P2}).
+All buffers and electrolytes used in the particle size measurements were prepared with ultrapure Milli-Q water (Millipore-Merk)  filtered through a filter membrane of 220 nm pore size. Concentrations of \ce{NaCl} and \ce{CaCl2} were optimized to reach the same operational measurement conditions used with phosphate saline buffer (PBS, \ce{Cl2H3K2Na3O8P2}).
 
 %Laura: Once we had made the buffers, were filtered twice before use to avoid contamination. The qNano apparatus is a very sensitive device, therefore this contamination could give blockades. 
 
 %Colloids
-Three colloidal suspensions were used in the experiments: microspheres (MS), humic acids (HA), and mixtures of microspheres and humic acids (MS-HA).
+Three types of colloidal suspensions were used in the experiments: microspheres (MS), humic acids (HA), and mixtures of microspheres and humic acids (MS-HA).
 Microspheres (Merck-Millipore, Darmstadt Germany, Estapor Microspheres, Ref. F-Y 100, Lot number 953-B1) with a mean diameter of $930 \, \pm 10~\mathrm{nm}$, without surface functional groups. The stock suspension has a polystyrene concentration of $10~\mathrm{g\,L^{-1}}$ (data from the manufacturer).
 
 Humic acids were purchased from Merck-Sigma-Aldrich (humic acid sodium salt technical grade CAS Number 68131-04-4). The molecular weight range of the HA is between  2,000--500,000. HA stock suspensions were prepared by dissolving  $\mathrm{100 \pm 0.5\,mg}$ HA in $100~\mathrm{mL}$ ultrapure water, and vortexed for five seconds using a RS-VA10 vortex stirrer apparatus at maximum speed (Phoenix Instrument, Germany). 
 
 %Pendiente de completar
-Influence of the concentration of HA and incubation time on the size  distribution of MS and electrolyte was evaluated.
+%Influence of the concentration of HA and incubation time on the size  distribution of MS and electrolyte was evaluated.
 
-Firstly different buffers were tested, namely, 
+\subsubsection{Buffer testing}
+Different buffers were tested to select the best measuring conditions, namely, 
 152 mM PBS ,
 7 mM \ce{CaCl2}, 151.7 mM PBS
 and 
@@ -309,12 +315,12 @@ and
 %latex. 
 
 Mixtures  with different concentrations of humic acids, HA, were prepared to examine their influence on the TRPS blockades. The HA suspensions were prepared from a 
-$\mathrm{1\;g\, L^{-1}}$
-HA stock suspension. For the different concentrations,  $\mathrm{1000\, \mu L}$ MS suspension + 
+$\mathrm{10\;g\, L^{-1}}$
+HA stock suspension. For the different concentrations,  $\mathrm{10\, mg L}$ MS suspension + 
 ($2, 4, 6, 8, 10~\mathrm{\mu L}$) 
-of HA suspension was pippeted into 2.0 mL  eppendorfs vials (Fisherbrand, Fisher Scientific).
+of HA suspension was pippeted into 2-mL capacity eppendorfs vials (Fisherbrand, Fisher Scientific).
 %: 2.0 mL MCT Graduated Natural, Cat No. 05-408-138, Qty: 500 PK, Lot 16420813, www.fishersci.com).
-The five HA concentrations were evaluated in different times. In amount, we have 8 samples/suspensions: 1 x MS, 2 x HA (2 uL and 6 uL) and 3 x MS + HA (2 uL, 4 uL, 6 uL, 8 uL and 10 uL). With the suspensions of MS and HA, we can evaluate if coating occurs.
+The five HA concentrations were evaluated in different times. In amount, we have 8 suspensions: 1 x MS, 2 x HA (2 $\mathrm{\mu L}$ and 6 $\mathrm{\mu L}$) and 3 x MS + HA (2 $\mathrm{\mu L}$, 4 $\mathrm{\mu L}$, 6 $\mathrm{\mu L}$, 8 $\mathrm{\mu L}$ and 10 $\mathrm{\mu L}$). With the suspensions of MS and HA, we can evaluate if coating occurs.
 
 %Samples of microspheres (MS): The microsphere suspensions were a dilution 1:1000 from the stock. This suspension was prepared with 999 uL of buffer and 1 uL of stock that was placed in a 2 mL eppendorf.
 %Samples of humic acids (HA): the concentration of this suspension is 1 g/L. The two samples used to measure humic acid calibrations were: a sample prepared with 1000 uL of buffer (7mM CaCl2) with 2 uL and 6 uL of the stock suspension of humic acids. 
@@ -368,14 +374,10 @@ To carry out the measure in the TRPS, the procedure is always the same: $\mathrm
 % 20 & 46 & 0.47 & 66 & 0.674347826\\
 
 
-The optimal device measurement thresholds are: 30 seconds minimum and 10 minutes maximum. The TRPS has to measure at least 500 particles in order to obtain accurate results. We reach this limit in all experiments.
-% * <diego.cerreda@gmail.com> 2017-06-19T11:42:50.615Z:
-% 
-% >  We reach this limit in all experiments.
-% No sé si me equivoco.
-% 
-% ^.
-% Otra forma de decir lo mismo que arriba:
+The settings of iZon-qNano apparatus  for resistive pulse detection are as follows: minimum scan time  time 30 seconds, maximum scan time  10 minutes. Minimum number pulse detections 500. the minimum average detection  rate in 10 min is  $\mathrm{0.83\, s^{-1}}$. 
+
+% Diego:
+%Otra forma de decir lo mismo que arriba:
 % In our TRPS instrument the measurement times were as follows:
 % buffer less than a minute, with less than 4 blockades,
 % buffer + HA 3 minutes approximately (about 20 blockades)
@@ -398,24 +400,10 @@ The optimal device measurement thresholds are: 30 seconds minimum and 10 minutes
 \subsection{Particle clustering}
 
 Since clustering is the grouping of similar blockades, some sort of measure could determine whether if blockades represent similar particles or dissimilar. You can find several  clustering methods in the literature:  hierarchical,  partitioning,  density-based,  model-based,  grid-based, and  soft-computing  methods\cite{Rokach2005}.
-% * <diego.cerreda@gmail.com> 2017-06-19T11:44:10.265Z:
-% 
-% Algunha cita aquí. Por ejemplo: CLUSTERING METHODS. Lior Rokach
-% 
-% ^.
 
 Partitioning methods (K-means, partition around medoids) are suitable for identifying compact and separated clusters, they require a previous removal of noise and outliers, and the number of clusters that will analyzed. 
 Density-based clustering is founded in variations of data density. High density regions surrounded by other with lower densities can be separated by using this method. 
-Analysis of particle size apparent populations was done by a model-based clustering. The classification and density estimation of this method is based on finite Gaussian mixture modeling (FGMM). The clustering model used is the expectation-maximization (EM) algorithm. A description  of this algorithm can be read in \citeauthor{Do2008}  
-% * <diego.cerreda@gmail.com> 2017-06-19T11:49:32.528Z:
-% 
-% > \citeauthor{Do2008}  
-% > \citeyear{Do2008}
-% > \cite{Do2008}. 
-% Hay que formatear esta cita y quitarle el año.
-% 
-% ^.
-%\citeyear{Do2008}
+Analysis of particle size apparent populations was done by a model-based clustering. The classification and density estimation of this method is based on finite Gaussian mixture modeling (FGMM). The clustering model used is the expectation-maximization (EM) algorithm. A description  of this algorithm can be read in \citeauthor{Do2008} 
 \cite{Do2008}. Briefly, in the FGMM procedure each population of a finite  mixture density is usually associated with a group or cluster. In this work, we assume that all component densities arise from the same parametric distribution family. The model assumes an univariate Gaussian distribution for each component or cluster. In one dimension, there are just two models: all components have equal variance, or different variance among clusters.
 With the methods based on finite mixture modeling or density-based clustering, there is no need to specify the number of clusters. The election of the number of clusters affects to the performance of the algorithm. So that, whatever the clustering model, the
 determination of the most suitable number of clusters can be done on the basis of the theory of information. In Bayesian
@@ -487,8 +475,14 @@ Voltage, ($\mathrm{mV}$).
 
  
  % Testing the background blockades using buffers and HA
-The  \ce{CaCl2} ($\mathrm{7\, mmol\,L^{-1}}$, $\mathrm{pH}\,5.8$) electrolyte without HA or MS gave about six blockades after $\mathrm{600\,s}$ (Table~\ref{tbl:baseline_blockades}). These measurements are caused by dust particles in the solution and are quite normal. In the (Table~\ref{tbl:baseline_blockades}) we also showed the blockade rate, that is the sum of the magnitudes of all blockades (nA) divided by the time of measure (s). The rate of blockades, using the highest concentration of HA ($10~\mathrm{mg\,L^{-1}}$) in \ce{CaCl2} and 40 h of incubation time, was $0.042\,\pm0.059~\mathrm{nA\,s^{-1}}$.
-On the other hand, the rate using  MS in \ce{CaCl2} was 240 times higher than only with HA. Therefore,  blockades of unbound HA in  HA-MS mixtures can be neglected, and all the blockades can be assigned to the MS.
+The  \ce{CaCl2} ($\mathrm{7\, mmol\,L^{-1}}$, $\mathrm{pH}\,5.8$) electrolyte without
+HA or MS gave about six blockades after $\mathrm{600\,s}$
+(Table~\ref{tbl:baseline_blockades}). These measurements are caused by some contamination and are quite normal. In the (Table~\ref{tbl:baseline_blockades}) we
+also showed the blockade rate, that is the sum of the magnitudes of all blockades
+(nA) divided by the time of measure (s). The rate of blockades, using the highest
+concentration of HA ($10~\mathrm{mg\,L^{-1}}$) in \ce{CaCl2} and 40 h of incubation
+time, was $0.042\,\pm0.059~\mathrm{nA\,s^{-1}}$.
+On the other hand, the rate using  MS in \ce{CaCl2} was 240 times higher than only with HA. Therefore,  blockades of dissolved HA  can be neglected, and all the blockades in  HA-MS mixtures can be assigned to the MS.
 
  
 
@@ -517,7 +511,7 @@ AcnA10, accumulated  nA in 10 min}
 
 
 %Estrutura de los datos de bloqueo y duración
-\subsection{Influence of the buffer on blockades}
+\subsection{Influence of the buffer on the size of blockades}
 
 A comparison of blockade magnitude and duration for the PBS, used as reference  buffer, and \ce{NaCl} and \ce{CaCl2} electrolytes is shown in Figure~\ref{fgr:pairs_buffers}.
 The scattering patterns observed using  \ce{NaCl}  and \ce{CaCl2} are similar, while the ones obtained with PBS showed a largest dispersion in blockade duration.
@@ -537,7 +531,7 @@ The scattering patterns observed using  \ce{NaCl}  and \ce{CaCl2} are similar, w
 
 
 
-The  structure of the main cluster of blockades in all the experimental design can be examined in Figure~\ref{fgr:blockades}. In this figure, we used the full width half-maximum (fwhm) in order to get a reduction of the noise of the baseline. Incubation time and [HA]  increase the dispersion of the cloud of points toward higher blockade magnitude values. It is important to note the decrease of the blockade rate with incubation time, which was more marked in absence of HA.
+The  distribution of cloud points of blockades magnitude versus duration in all the experimental design can be examined in Figure~\ref{fgr:blockades}. In this figure, we used the full width half-maximum (fwhm) in order to get a reduction of the noise of the baseline. Incubation time and [HA]  increase the dispersion of the cloud of points toward higher blockade magnitude values. It is important to note the decrease of the blockade rate with incubation time, which was more marked in absence of HA.
 %Eugenio: quedei !
 
  \begin{figure}
@@ -545,6 +539,24 @@ The  structure of the main cluster of blockades in all the experimental design c
   \caption{Influence of concentration of HA and incubation time on the blockade magnitude of MS in 7 mM~\ce{CaCl2} using a NP1000 (1000 nm pore size). The insets indicate the incubation time, the concentration of humic acids and the blockade rate (B. rate) per second. Incubation time and [HA] increased the span of blockade magnitudes and decreased the blockade full  width half-maximum (fwhm) rate, i.e., the duration of the blockade at maximum height.}
 \label{fgr:blockades}
 \end{figure}
+
+
+
+Analysis of the waveforms of blockades in presence of HA shows anomalous resistive pulses
+(Figure~\ref{fgr:block_sorting_HA6_T16}).
+Anomalous  waveforms were less than  $4\%$
+(Figure~\ref{fgr:block_sorting_HA6_T16}b).
+but large waveforms were about $11\%$   
+(Figure~\ref{fgr:block_sorting_HA6_T16}c).
+
+%====================== Blockade sorting =====================================
+ \begin{figure}
+  \includegraphics[width=\linewidth]{Figures/Block_sorting_HA6_T16.pdf}
+  \caption{Waveforms corresponding to resistive pulses  after a measurement of a mixture of MS and $\mathrm{6\, mg\, L^{-1}}$ HA incubated for 16 h. Waveforms were detected with using a threshold the 5 times the median absolute deviation. The waveforms a aligned in such way that peaks coincide at t =0 in a time frame  of 200 ms duration. The Waveforms were sorted using principal component analysis projection  and the finite gaussian mixture model based on expectation-maximization algorithm. Three main shapes were identified, namely,  a) regular waveforms corresponding to 1606 blockades, b) anomalous waveforms with double peaks and asymmetric tails (70 blockades) and c) large waveforms 209). Baseline current was 100 nA.}
+\label{fgr:block_sorting_HA6_T16}
+\end{figure}
+%==================================================================================
+
 
 Blockade magnitude and duration were also analyzed  by 2D clustering methods using the normalized transformation \cite{Weatherall2016,VogelQuantitativeSizing2011}. The  standard sizing technique consists in calculating the cube roots of TRPS pulse magnitude, normalized by their mean value. Pulse duration was also normalized  dividing by the mean values.
 
@@ -598,6 +610,7 @@ The HA-MS case is a clear example of asymmetrically charged colloids and surface
 Variable & Magnitude & Units\\
 \hline
 Temperature & 298 & K\\
+Boltzmann constant ($K_\mathrm{B}$) & $1.3806\,10^{-23}$ & $\mathrm{J\, K^{-1}}$\\
 Hamaker constant & $7.9\,10^{-21}$ & J\cite{Fronczak2017}\\
 MS  diameter & $9.5\, 10^{-7}$ & m\\
 HA  diameter & $9.0\, 10^{-9}$ & m\\
