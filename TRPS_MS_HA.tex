@@ -717,12 +717,9 @@ optimal  kernel density function that was, in general, fitted with a mixture of 
 
 %=========================================================================
 Figure~\ref{fgr:boxplot_size} shows the results of the particle size decomposition in three different clusters. Note that the measured particle size in the cluster no.~1 is slightly smaller than the nominal particle size provided by the supplier. 
-The cluster no.~2 is on the particle size reported by the manufacturer, and the cluster no.~3 is above. That indicates that the FGMM-EM separates different populations in the MS standards in presence of \ce{CaCl2}. Presence of HA clearly increases the  magnitude of some blockades and alter the size estimation.
+The cluster no.~2 is on the particle size reported by the manufacturer, and the cluster no.~3 is above. That indicates that the FGMM-EM separates different populations in the MS standards in presence of \ce{CaCl2}. Presence of HA clearly increases the  magnitude of some blockades altering the size estimation.
 %% Cluster numero 1 azul 
 The cluster no.~1 groups the particles in the range from $810$ to $925\;\mathrm{nm}$. The size of the particles in this cluster did remained unchanged with the incubation time and the HA concentration. That means that there is a significant population of MS whose size was not influenced by the HA.
-
-
-%% Cluster numero 2 verde 
 The cluster no.~2 groups the particles with a size in the range from $925$ to $1095\;\mathrm{nm}$. The boxes of clusters no.~1 and no.~2 hardly overlap. 
 Cluster no. 3 groups the particles with the largest sizes ($> 1095~\mathrm{nm}$). 
 
@@ -730,17 +727,14 @@ Cluster no. 3 groups the particles with the largest sizes ($> 1095~\mathrm{nm}$)
 %%========================================================================= 
  \begin{figure}
   \includegraphics[width=0.8\linewidth]{Figures/Boxplot_MS_HA_CaCl2_sizes_rev.pdf}
-  \caption{Influence of the concentration of Humic Acids and contact time on the  size of microspheres.  Clusters numbered from 1 to 3 correspond to three gaussians that were identified by optimal fitting using the expectation maximization (EM) algorithm  that minimizes the Bayesian Information Criterion (BIC). The incubation times of the MS,  namely 0.25, 16 and 40, are indicated by labels on the top of the panels.}
+  \caption{Influence of the concentration of Humic Acids and contact time on the  size of microspheres.  Clusters numbered from 1 to 3 correspond to three gaussians that were identified by optimal fitting using the expectation maximization algorithm  that minimizes the Bayesian Information Criterion (BIC). The incubation times of the MS,  namely 0.25, 16 and 40, are indicated by labels on the top of the panels.}
   \label{fgr:boxplot_size}
 \end{figure}
 %%======================================================================== 
 
-
+%Poblaciones de los clusters
 Classification of particles in different apparent sizes was used to analyze the changes in the population distribution in function of the incubation time and the [HA]. Figure~\ref{fgr:boxplot_populations} shows the frequency of particle counts in each size fraction regarding the [HA]. %Analisis de las poblaciones en el Cluster 1 azul
 Populations in the cluster no.~1 constitute less than the half of the TRPS counts. This cluster do not show a clear relation with the [HA] or with the time. Only  shows a  significant decrease with the [HA] in the range $2-6~\mathrm{mg\,L^{-1}}$ at $40~\mathrm{h}$ incubation that can be related to the increase in their size.
-%in the same conditions of [HA] and incubation time.
-
-%Analisis de las poblaciones en el Cluster 2 verde
 Cluster no. 2 encompassed the higher number of counts at short times, i.e. $>\,0.5$ population fraction, at $0.25~\mathrm{h}$ incubation, with a significant decrease at bigger [HA], $>8~\mathrm{mg\,L^{-1}}$. At larger times, the population decreased significantly in the range of [HA] $2-8~\mathrm{mg\,L^{-1}}$. Changes in the particle populations in the cluster no. 2 do not have significant correspondence  with the variations in the cluster no. 1.% However, we can observe the same trend with [HA] $2-6~\mathrm{mg\,L^{-1}}$at $40~\mathrm{h}$.
 
 %Analisis de las poblaciones en el Cluster 3 rojo
@@ -751,10 +745,10 @@ Populations in the cluster no. 3 varied in a opposite way as in the cluster no. 
 %==========================================================================
 \begin{figure}
  \includegraphics[width=0.8\linewidth]{Figures/Boxplot_MS_HA_CaCl2_populations.pdf}
-  \caption{Influence of the concentration of Humic Acids and incubation  time on the population distribution of MS into three particle size fractions denoted as
-  Cluster 1 ($815 - 925~\mathrm{nm}$),  Cluster 2 ($925 - 1095~\mathrm{nm}$), 
+  \caption{Influence of the concentration of Humic Acids and incubation  time on the po\-pulation distribution of measured sizes by the TRPS into the three best-fitting particle size clustering using the FGMM-EM. Clusters denote intervals of particle sizes, namely,
+  cluster 1 ($815 - 925~\mathrm{nm}$),   cluster 2 ($925 - 1095~\mathrm{nm}$), 
   and
-  Cluster 3 ($ > 1095~\mathrm{nm}$)
+  cluster 3 ($ > 1095~\mathrm{nm}$).
   }
   \label{fgr:boxplot_populations}
 \end{figure}
@@ -811,15 +805,14 @@ Flocculation dynamics implies that  size distribution of flocs shift towards big
 However, if MS coating by HA is negligible then what do the these large sizes mean? and, why different sizes coexist?
 Our hypothesis is that aggregation of HA produces  a suspension of HA flocs covering a large scale of sizes from few tens nanometers to millimeters, this is typical of colloid aggregation processes.  The smallest flocs crossing the nanopore, with current blockades below the  detection threshold established in the signal processing algorithms, are accounted as noise in the baseline current. Some larger flocs can accounted as blockades that are identified as particles, and bigger flocs are large enough that can not enter the pore.
 Therefore, the HA flocs population with different sizes contribute both to the noise and to blockades.
-During measurement the blockades corresponding to MS passing through the pore can be  influenced by the accompanying HA flocs. Then, the blockade magnitude and duration in HA-MS mixtures depends on the size and concentration of the flocs passing simultaneously with the MS thorough the pore.
+In addition, blockades corresponding to MS passing through the pore can be  influenced by the accompanying HA flocs. Then, the blockade magnitude and duration in HA-MS mixtures depends on the size and concentration of the flocs passing simultaneously with the MS thorough the pore.
 
-Hydrocolloid that can deform  upon  passing the pore\cite{Pevarnik2013}. Deformation can bring waveforms with a different shape regarding the waveforms of compact MS. However, analyzing the traces of TRPS in presence of HA waveforms did not show significant differences in shape (Figure~\ref{fgr:block_sorting_HA6_T16}). The only  difference is the waveform size. It seems that HA does not behave as deformable hydrocolloids.
+Hydrocolloids that can deform  upon  passing the pore\cite{Pevarnik2013}. That deformation can bring waveforms with a different shape regarding the waveforms of compact MS. However, analyzing the traces of TRPS in presence of HA waveforms did not show significant differences in shape (Figure~\ref{fgr:block_sorting_HA6_T16}). The only  difference is the size of the waveforms. It seems that HA does not behave as deformable hydrocolloids.
 
-In view of the above, the TRPS measurement on HA-MS mixtures depends on a complex assemblage of stochastic processes that includes colloid aggregation dynamics and the arrival times of HA flocs at the measurement pore. Therefore the results of TRPS measurements in natural samples can be analyzed statistically.
+In view of the above, the TRPS measurement on HA-MS mixtures depends on a complex assemblage of stochastic processes that includes colloid aggregation dynamics and the arrival times of HA flocs at the measurement pore. Therefore the results of TRPS measurements in natural samples are influenced by DOM. Tha influence can be analyzed statistically.
 
 
 
-%Eu: quedei eiqui
 
 %================================================================================
 % IDEA!!!!!
@@ -841,18 +834,15 @@ encompasses the fraction of particles between 0.3 and 0.5
 that is not influenced by the presence of HA.
 The cluster no. 2 clearly indicates an increase in the particle size associated with the [HA] and
 contact time. The coexistence of different sizes and the
-slow  growth rate indicate that the kinetics of HA binding
-to MS is slow. Adsorption of HA on MS is limited by
-transport and electrostatic interactions~ \cite{doi:10.1021/es981236u}.
-Double layer interaction calculations (Table~\ref{tbl:dvlo_interaction}) showed a low  repulsion barrier,
+slow  growth rate supports that the HA binding
+to MS is negligible accordingly the small electrostatic interactions\cite{doi:10.1021/es981236u}. The
+double layer interaction calculations (Table~\ref{tbl:dvlo_interaction}) showed a low  repulsion barrier,
 so that the attraction force is small and the range of electrostatic attraction is short $\sim 20~\mathrm{nm}$.
-The rate of increase in size is about one  layer of primary particles of HA per $\mathrm{mg HA\,L^{-1}}$ in the suspension.
 
 %%
-Fourth, the dramatic increase in size in cluster no. 3 
-and subsequent decrease indicates bridging flocculation at 
-$\mathrm{[HA] \,=\, 2\;mg\,L^{-1}}$, followed by polymer stabilization at higher [HA]. %% Pendiente de confirmar por microscopía.
-Bridging flocculation and polymer stabilization can occur, in presence of \ce{Ca^{2+}}, to any colloid that adsorbs dissolved organic matter and .
+Accordingly with our hypothesis, the peak in size in cluster no. 3 with 
+$\mathrm{[HA] \,=\, 2\;mg\,L^{-1}}$
+indicates an optimum in the [HA] that increases the apparent size of MS.
 
 %Transition from bridging flocculation to polymer stabilization results from the stoichometry ratio of 
 %\ce{Ca^{2+}}:HA.
@@ -870,8 +860,18 @@ Bridging flocculation and polymer stabilization can occur, in presence of \ce{Ca
 \section{Conclusions}
 
 
-TRPS provides a very good resolution in the separation  of particle sizes in polydisperse mixtures, better than alternative techniques to study surface adsorption, such as laser-beam reflectometry. However, that separation must be accompanied by a careful statistical clustering procedure. The quality of separation depends on the neatness definition of subpopulations. A continuous broad distribution of particle sizes cannot bring a statistical separation.
-The presence of HA in the micropore increases the blockade magnitude of the passing microspheres, causing an overestimation of the size measured by TRPS.  The linear relationship  between particle size growth and [HA] sketches new potential methods based on TRPS to quantify the influence of the coating of MS by HA on the particle thickening.
+TRPS provides a method for direct quantification of suspended particles in aqueous suspensions using electrolytes at concentrations and pH typical of fresh waters.
+
+However, presence of DOM at  decreases the count rate causing a underestimation of the particle concentrations.
+
+Presence of DOM increase the noise of the current baseline in TRPS and alter the measurements.
+The presence of HA in the TRPS micropore increases the blockade magnitude of microspheres which leads to an overestimation in the size measurements.
+
+The particle size identification  must be accompanied by a careful statistical clustering procedure. Using the unsupervised FGMM-EM clustering method on the TRPS results ca be used to analyze the TRPS results.
+%
+%Eu: quedei eiqui
+Data from  TRPS cannot be used directly to 
+
 
 %=========================================================================
 Results  point the role of dissolved organic polymers on the behavior of colloidal particles in soils and porous media in general. So, can contribute in fields related to 
@@ -899,6 +899,7 @@ Xunta de Galicia GRC2014/017), Diego-Soto by Spanish Government MEC’s FPU.
 % The same is true for Supporting Information, which should use the
 %% suppinfo environment.
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \begin{suppinfo}
 
 This will usually read something like: ``Experimental procedures and
@@ -927,7 +928,7 @@ automatically add a sentence pointing to the information on-line:
 %  Your scheme graphic would go here: \texttt{.eps} format\\
 %  for \LaTeX\, or \texttt{.pdf} (or \texttt{.png}) for pdf\LaTeX\\
 %  \textsc{ChemDraw} files are best saved as \texttt{.eps} files:\\
-%  these can be scaled without loss of quality, and can be\\
+%  these can be scaled without ntracion  of quality, and can be\\
 %  converted to \texttt{.pdf} files easily using \texttt{eps2pdf}.\\
 %  %\includegraphics{graphic}
 %  \caption{An example scheme}
